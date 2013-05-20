@@ -1,0 +1,64 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_MOD_BY	Bostjan Mihoric	/ccompletion@gmail.com/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	/unofficial modification/
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	/unofficial modification/
+APLL_CON	clock.c	12;"	macro	file:
+APLL_CON_VAL	clock.c	14;"	macro	file:
+APLL_LOCK	clock.c	1;"	macro	file:
+ARM_RATIO	clock.c	6;"	macro	file:
+CLK_DIV0	clock.c	5;"	macro	file:
+CLK_SRC	clock.c	18;"	macro	file:
+CLR_BIT	led.c	5;"	macro	file:	funlike:
+CLR_BIT	uart.c	14;"	macro	file:	funlike:
+CPL_BIT	led.c	6;"	macro	file:	funlike:
+CPL_BIT	uart.c	15;"	macro	file:	funlike:
+EPLL_LOCK	clock.c	3;"	macro	file:
+GET_BIT	led.c	7;"	macro	file:	funlike:
+GET_BIT	uart.c	16;"	macro	file:	funlike:
+GPACON	uart.c	1;"	macro	file:
+GPKCON0	led.c	1;"	macro	file:
+GPKDAT	led.c	2;"	macro	file:
+HCLKX2_RATIO	clock.c	9;"	macro	file:
+HCLK_RATIO	clock.c	8;"	macro	file:
+MPLL_CON	clock.c	15;"	macro	file:
+MPLL_CON_VAL	clock.c	17;"	macro	file:
+MPLL_LOCK	clock.c	2;"	macro	file:
+MPLL_RATIO	clock.c	7;"	macro	file:
+OTHERS	clock.c	4;"	macro	file:
+PCLK_RATIO	clock.c	10;"	macro	file:
+SET_BIT	led.c	4;"	macro	file:	funlike:
+SET_BIT	uart.c	13;"	macro	file:	funlike:
+UBRDIV0	uart.c	10;"	macro	file:
+UCON0	uart.c	3;"	macro	file:
+UDIVSLOT0	uart.c	11;"	macro	file:
+UFCON0	uart.c	4;"	macro	file:
+UFSTAT0	uart.c	7;"	macro	file:
+ULCON0	uart.c	2;"	macro	file:
+UMCON0	uart.c	5;"	macro	file:
+URXH0	uart.c	9;"	macro	file:
+UTRSTAT0	uart.c	6;"	macro	file:
+UTXH0	uart.c	8;"	macro	file:
+_LED_H_BAB	led.h	2;"	macro
+_UART_H_BAB	uart.h	2;"	macro
+_start	start.S	2;"	label
+c	main.c	4;"	local
+clock_init	clock.c	19;"	function
+delay	led.c	8;"	function
+delay	led.h	4;"	prototype
+get_char	uart.c	37;"	function
+get_char	uart.h	5;"	prototype
+halt	start.S	17;"	label
+i	led.c	10;"	local
+i	led.c	15;"	local
+led	led.c	13;"	function
+led	led.h	5;"	prototype
+main	main.c	2;"	function
+put_char	uart.c	42;"	function
+put_char	uart.h	6;"	prototype
+put_str	uart.c	48;"	function
+put_str	uart.h	7;"	prototype
+uart_init	uart.c	17;"	function
+uart_init	uart.h	4;"	prototype
