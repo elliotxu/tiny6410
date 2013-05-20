@@ -19,7 +19,7 @@ _start:
 	mov r0, #0x10000    @0000 0000 0000 0001 0000 0000 0000 0000=0x1000
 	str r0, [r1]	
 
-/* 设置GPMDAT让GPM3输出0 */
+/* 设置GPMDAT让GPK4输出0 */
 	ldr r1, =0x7F008808
 	mov r0, #0
 	str r0, [r1]
