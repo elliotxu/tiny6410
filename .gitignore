@@ -2,3 +2,4 @@
 *.dis
 *.elf
 *.o
+libc.a

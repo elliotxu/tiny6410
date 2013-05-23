@@ -9,7 +9,7 @@ _start:
  mov r1,#0
  str r1,[r0]
 /* Setup SP */
- ldr sp,=8*1024+0x50000000
+ ldr sp,=20*1024+0x50000000
 /* Go To Setup Clock */
  bl clock_init
 /* Go To main */

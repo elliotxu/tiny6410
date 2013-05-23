@@ -1,0 +1,34 @@
+<NotepadPlus>
+    <Project name="uart">
+        <File name="clock.c" />
+        <File name="led.c" />
+        <File name="led.h" />
+        <File name="main.c" />
+        <File name="Makefile" />
+        <File name="start.S" />
+        <File name="uart.c" />
+        <File name="uart.h" />
+        <Folder name="lib">
+            <File name="lib\ctype.c" />
+            <File name="lib\div64.h" />
+            <File name="lib\div64.S" />
+            <File name="lib\lib1funcs.S" />
+            <File name="lib\Makefile" />
+            <File name="lib\muldi3.c" />
+            <File name="lib\printf.c" />
+            <File name="lib\printf.h" />
+            <File name="lib\string.c" />
+            <File name="lib\string.h" />
+            <File name="lib\vsprintf.c" />
+            <File name="lib\vsprintf.h" />
+        </Folder>
+        <Folder name="include">
+            <File name="include\ctype.h" />
+            <File name="include\gcclib.h" />
+            <File name="include\kernel.h" />
+            <File name="include\stdio.h" />
+            <File name="include\system.h" />
+            <File name="include\types.h" />
+        </Folder>
+    </Project>
+</NotepadPlus>
