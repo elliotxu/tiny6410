@@ -1,13 +1,13 @@
 <NotepadPlus>
     <Project name="uart">
-        <File name="clock.c" />
-        <File name="led.c" />
-        <File name="led.h" />
-        <File name="main.c" />
-        <File name="Makefile" />
-        <File name="start.S" />
-        <File name="uart.c" />
-        <File name="uart.h" />
+        <Folder name="include">
+            <File name="include\ctype.h" />
+            <File name="include\gcclib.h" />
+            <File name="include\kernel.h" />
+            <File name="include\stdio.h" />
+            <File name="include\system.h" />
+            <File name="include\types.h" />
+        </Folder>
         <Folder name="lib">
             <File name="lib\ctype.c" />
             <File name="lib\div64.h" />
@@ -22,13 +22,13 @@
             <File name="lib\vsprintf.c" />
             <File name="lib\vsprintf.h" />
         </Folder>
-        <Folder name="include">
-            <File name="include\ctype.h" />
-            <File name="include\gcclib.h" />
-            <File name="include\kernel.h" />
-            <File name="include\stdio.h" />
-            <File name="include\system.h" />
-            <File name="include\types.h" />
-        </Folder>
+        <File name="clock.c" />
+        <File name="led.c" />
+        <File name="led.h" />
+        <File name="main.c" />
+        <File name="Makefile" />
+        <File name="start.S" />
+        <File name="uart.c" />
+        <File name="uart.h" />
     </Project>
 </NotepadPlus>
