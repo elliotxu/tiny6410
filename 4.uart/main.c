@@ -1,9 +1,10 @@
 #include "uart.h"
 //#include "stdio.h"
-
+#define export 
 int main(void)
 {
  char c;
+ char temp;
  uart_init(); 
  led();
  put_char('A');
@@ -12,9 +13,24 @@ int main(void)
  printf("test=%d\r\n",10);
  while(1)
  {
-  c=get_char();
-  put_char(c+1);
-  
+	temp=get_char();
+	printf("%c\r\n",temp);
+	 switch(temp)
+	 {
+		case 9://Tab
+		printf("d download\r\n");
+		printf("t test memory\r\n");
+		break;
+		case 'r'://reset cpu
+		printf("reset cpu ...\r\n");
+		reset();
+		break;
+		case 'd':
+		break;
+		case 't':
+		break;
+		default:printf("no this item!\r\n");
+	 } 
  }
  return(0);
 }

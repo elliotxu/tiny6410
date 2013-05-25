@@ -1,4 +1,5 @@
 .globl _start
+.globl reset
 _start:
 /* Peri Port Setup */
  ldr r0,=0x70000000
@@ -14,5 +15,7 @@ _start:
  bl clock_init
 /* Go To main */
  bl main
+ reset:
+ b _start
 halt:
  b halt
