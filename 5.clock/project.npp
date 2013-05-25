@@ -1,0 +1,8 @@
+<NotepadPlus>
+    <Project name="5.clock">
+        <File name="clock.c" />
+        <File name="led.c" />
+        <File name="Makefile" />
+        <File name="start.S" />
+    </Project>
+</NotepadPlus>
