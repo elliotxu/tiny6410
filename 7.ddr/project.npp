@@ -1,0 +1,11 @@
+<NotepadPlus>
+    <Project name="DDR">
+        <File name="clock.S" />
+        <File name="common.h" />
+        <File name="led.c" />
+        <File name="led.lds" />
+        <File name="Makefile" />
+        <File name="sdram.c" />
+        <File name="start.S" />
+    </Project>
+</NotepadPlus>
