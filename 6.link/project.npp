@@ -1,0 +1,8 @@
+<NotepadPlus>
+    <Project name="link">
+        <File name="led.c" />
+        <File name="leds.lds" />
+        <File name="Makefile" />
+        <File name="start.S" />
+    </Project>
+</NotepadPlus>

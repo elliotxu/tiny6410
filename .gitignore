@@ -3,3 +3,4 @@
 *.elf
 *.o
 libc.a
+*.tmp
