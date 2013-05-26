@@ -7,5 +7,6 @@
         <File name="Makefile" />
         <File name="sdram.c" />
         <File name="start.S" />
+        <File name="clock_c.c" />
     </Project>
 </NotepadPlus>
