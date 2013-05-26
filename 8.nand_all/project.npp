@@ -1,0 +1,40 @@
+<NotepadPlus>
+    <Project name="nand_all">
+        <Folder name="include">
+            <File name="include\common.h" />
+            <File name="include\ctype.h" />
+            <File name="include\gcclib.h" />
+            <File name="include\kernel.h" />
+            <File name="include\nand.h" />
+            <File name="include\stdio.h" />
+            <File name="include\system.h" />
+            <File name="include\types.h" />
+        </Folder>
+        <Folder name="lib">
+            <File name="lib\ctype.c" />
+            <File name="lib\div64.h" />
+            <File name="lib\div64.S" />
+            <File name="lib\lib1funcs.S" />
+            <File name="lib\Makefile" />
+            <File name="lib\muldi3.c" />
+            <File name="lib\printf.c" />
+            <File name="lib\printf.h" />
+            <File name="lib\string.c" />
+            <File name="lib\string.h" />
+            <File name="lib\vsprintf.c" />
+            <File name="lib\vsprintf.h" />
+        </Folder>
+        <File name="clock.S" />
+        <File name="main.c" />
+        <File name="Makefile" />
+        <File name="mlc_boot_tool" />
+        <File name="nand.c" />
+        <File name="project.npp" />
+        <File name="sdram.c" />
+        <File name="start.S" />
+        <File name="uart.c" />
+        <File name="uart.h" />
+        <File name="uart.lds" />
+        <File name="wy.bin" />
+    </Project>
+</NotepadPlus>
