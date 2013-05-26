@@ -242,7 +242,7 @@ int copy2ddr(unsigned int nand_start, unsigned int ddr_start, unsigned int len)
 		free_page = ((len - 8192)+4096) >> 12;
 	}
 	/* ³õÊ¼»¯nand flash controller */
-	nand_init();
+//	nand_init();
 	
 	/* ¶Ánand flash */
 	/* Read pages */
