@@ -102,12 +102,19 @@ void nand_send_addr(unsigned int addr)
 	nand_addr((page >> 8) & 0xff);
 	nand_addr((page >> 16) & 0xff);
 #else
-	nand_addr(addr & 0xff);         /* a0~a7 */
-	nand_addr((addr >> 8) & 0x1f);   /* 程序的角度: a8~a12 */
+	//nand_addr(addr & 0xff);         /* a0~a7 */
+	//nand_addr((addr >> 8) & 0x1f);   /* 程序的角度: a8~a12 */
 
-	nand_addr((addr >> 13) & 0xff); /* 程序的角度: a13~a20 */
-	nand_addr((addr >> 21) & 0xff); /* 程序的角度: a21~a28 */
-	nand_addr((addr >> 29) & 0xff); /* 程序的角度: a29~ */
+	//nand_addr((addr >> 13) & 0xff); /* 程序的角度: a13~a20 */
+	//nand_addr((addr >> 21) & 0xff); /* 程序的角度: a21~a28 */
+	//nand_addr((addr >> 29) & 0xff); /* 程序的角度: a29~ */
+	
+	nand_addr(addr & 0xff);         /* a0~a7 */
+	nand_addr((addr >> 8) & 0x3f);   /* 程序的角度: a8~a13 */
+
+	nand_addr((addr >> 14) & 0xff); /* 程序的角度: a13~a21 */
+	nand_addr((addr >> 22) & 0xff); /* 程序的角度: a21~a29 */
+	nand_addr((addr >> 30) & 0xff); /* 程序的角度: a30~ */
 	
 #endif
 }

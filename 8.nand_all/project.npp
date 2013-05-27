@@ -35,6 +35,5 @@
         <File name="uart.c" />
         <File name="uart.h" />
         <File name="uart.lds" />
-        <File name="wy.bin" />
     </Project>
 </NotepadPlus>

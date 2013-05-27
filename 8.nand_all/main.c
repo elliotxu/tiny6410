@@ -7,8 +7,9 @@
 
 void nand_read_test(void)
 {
+
 	int i;
-	char buf[100];
+	char buf[1024*8];
 	unsigned int addr;
 	unsigned int size;
 	
@@ -21,10 +22,10 @@ void nand_read_test(void)
 	scanf("%s", buf);
 	size = strtoul(buf, NULL, 0);
 
-	if (size > 100)
+	if (size > (1024*8))
 	{
 		printf("the max size is 100\n\r");
-		size = 100;
+		size = (1024*8);
 	}
 
 	nand_read(addr, (unsigned int)buf, size);

@@ -16,13 +16,14 @@ _start:
 	str r1, [r0]
 	
 	/* 设置栈 */
-	ldr sp, =30*1024+0x51000000
+	
 	//ldr sp, =8*1024
 	/* 设置时钟 */
 	bl clock_init
 
 	/* 设置DDR */
 	bl ddr_init
+	ldr sp, =100*1024+0x51000000
 	bl nand_init
 	/* 重定位 */
 /* 把程序的代码段、数据段复制到它的链接地址去 */	
