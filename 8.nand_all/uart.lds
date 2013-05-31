@@ -5,7 +5,7 @@ SECTIONS {
 			start.o
 			clock.o
 			sdram.o
-			nand.o
+			nand_8k.o
 			* (.text)
 	}
 

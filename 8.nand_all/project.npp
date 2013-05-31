@@ -5,10 +5,10 @@
             <File name="include\ctype.h" />
             <File name="include\gcclib.h" />
             <File name="include\kernel.h" />
-            <File name="include\nand.h" />
             <File name="include\stdio.h" />
             <File name="include\system.h" />
             <File name="include\types.h" />
+            <File name="include\nand_8k.h" />
         </Folder>
         <Folder name="lib">
             <File name="lib\ctype.c" />
@@ -28,7 +28,7 @@
         <File name="main.c" />
         <File name="Makefile" />
         <File name="mlc_boot_tool" />
-        <File name="nand.c" />
+        <File name="nand_8k.c" />
         <File name="project.npp" />
         <File name="sdram.c" />
         <File name="start.S" />

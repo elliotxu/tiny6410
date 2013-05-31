@@ -1,6 +1,6 @@
 
 #include <stdio.h>
-#include <nand.h>
+#include <nand_8k.h>
 #include "uart.h"
 #include "lib/printf.h"
 #include "lib/string.h"
@@ -174,11 +174,11 @@ void run_program(void)
 
 	theProgram();		
 }
-
+unsigned char IdBuf[6];
 int main()
 {
 	char c;
-	
+	int i;
 	init_uart();
 	printf("can update program with serial port\n\r");
 
@@ -189,7 +189,7 @@ int main()
 		printf("[e] erase the nand flash\n\r");
 		printf("[g] get file, and write to nand flash 0 block\n\r");
 		printf("[x] get file to ddr(0x52000000), run it\n\r");
-
+		printf("[i] get nand flash ID\r\n");
 		do {
 			c = getc();
 			if (c == '\n' || c == '\r')
@@ -237,6 +237,11 @@ int main()
 			{
 				run_program();
 				break;
+			}
+			case 'i':
+			case 'I':
+			{
+				nand_info();				
 			}
 			
 		}

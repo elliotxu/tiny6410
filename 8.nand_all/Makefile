@@ -11,7 +11,7 @@ CPPFLAGS   	:= -nostdinc -I$(INCLUDEDIR)
 
 export 	CC AR LD OBJCOPY OBJDUMP INCLUDEDIR CFLAGS CPPFLAGS 
 
-objs := start.o clock.o sdram.o nand.o main.o uart.o lib/libc.a
+objs := start.o clock.o sdram.o nand_8k.o main.o uart.o lib/libc.a
 
 uart.bin: $(objs)
 	${LD} -Tuart.lds -o uart.elf $^
