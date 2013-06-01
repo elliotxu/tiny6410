@@ -9,6 +9,7 @@
             <File name="include\system.h" />
             <File name="include\types.h" />
             <File name="include\nand_8k.h" />
+            <File name="include\basetype.h" />
         </Folder>
         <Folder name="lib">
             <File name="lib\ctype.c" />
