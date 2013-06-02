@@ -73,68 +73,7 @@ void nand_write_test(void)
 	nand_write(addr, (unsigned char *)buf, size);
 }
 
-void update_programttt(void)
-{
-	u8 *buf = (u8 *)0x52000000;
-	u32 len = 0;
-	s32 have_begin = 0;
-	s32 nodata_time = 0;
-	u32 erase_addr;
-	char c;
-	s32 i;
 
-	/* 读串口获得数据 */
-	printf("\n\ruse V2.2.exe/gtkterm to send file\n\r", len);
-	while (1)
-	{
-		if (getc_nowait(&buf[len]) == 0)
-		{
-			have_begin = 1;
-			nodata_time = 0;
-			len++;
-		}
-		else
-		{
-			if (have_begin)
-			{
-				nodata_time++;
-			}			
-		}
-
-		if (nodata_time == 1000)
-		{
-			break;
-		}
-	}
-	printf("have get %d bytes data\n\r", len);
-	printf("the first 16 bytes data: \n\r");
-	for (i = 0; i < 16; i++)
-	{
-		printf("%02x ", buf[i]);
-	}
-	printf("\n\r");
-
-	printf("Press Y to program the flash: \n\r");
-
-	c = getc();
-	
-	if (c == 'y' || c == 'Y')
-	{	
-		/* 烧写到nand flash block 0 */
-	//	blockNum=len>>21;//因为从0地址开始所以len也就是最后的地址
-	//	for (erase_addr = 0; erase_addr < blockNum; erase_addr ++)
-		{
-			nand_erase_block(erase_addr);
-		}
-		nand_write(0, buf, len);
-		
-		printf("update program successful\n\r");
-	}
-	else
-	{
-		printf("Cancel program!\n\r");
-	}
-}
 void update_program(void)
 {
 	u8 *buf = (u8 *)0x52000000;
@@ -192,7 +131,7 @@ void update_program(void)
 			printf("%02X ",buf[i]);
 		}*/
 		/* 烧写到nand flash block 0 */
-		blockNum=len>>21;//因为从0地址开始所以len也就是最后的地址
+		blockNum=len>>20;//因为从0地址开始所以len也就是最后的地址
 		for (erase_addr = 0; erase_addr < blockNum; erase_addr ++)
 		{
 			nand_erase_block(erase_addr);
