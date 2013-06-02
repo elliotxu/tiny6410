@@ -88,7 +88,7 @@ void nand_init(void)
 }
 
 
-
+//8192
 void nand_send_addr(u32 addr)
 {
 #if 0	
@@ -457,19 +457,23 @@ int copy2ddr(u32 nand_start, u32 ddr_start, u32 len)
 
 	if(len > 8192)
 	{
-		free_page = ((len - 8192)+4096) >> 12;
+		//free_page = ((len - 8192)+4096) >> 12;
+		free_page=(len-8*1024)/(8*1024)+1;	//计算除了前面8K还有多少page需要copy
 	}
 	/* 初始化nand flash controller */
 //	nand_init();
 	
 	/* 读nand flash */
-	/* Read pages */
-	for (i = 0; i < 4; i++, dest+=2048){
+	/* 拷贝前面的8K ，注意这里虽然每次读出8K数据，但是dest+=2048其实只保留了2K而已其余的会被
+	下一次拷贝数据时覆盖掉*/
+	for (i = 0; i < 4; i++, dest+=2048)
+	{
 		nand_read_page(dest, i);
 	}
 
-	/* Read pages */
-	for (i = 4; i < (free_page+4); i++, dest+=8192) {
+	/* 拷贝8K以后的数据 */
+	for (i = 4; i < (free_page+4); i++, dest+=8192) 
+	{
 		nand_read_page(dest, i);
 	}
 	
